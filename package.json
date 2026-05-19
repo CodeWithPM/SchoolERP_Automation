@@ -1,13 +1,18 @@
 {
   "name": "schoolerp_automation",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
+  "version": "2.0.0",
+  "description": "School ERP Aadhaar Card Details Playwright Framework",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:system": "playwright test --grep @system",
+    "test:ui": "playwright test --grep @ui",
+    "test:responsive": "playwright test --grep @responsive",
+    "test:chromium": "playwright test --project=chromium-desktop",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report reports/html-report"
+  },
   "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.8.0"

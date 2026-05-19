@@ -1,0 +1,15 @@
+{
+  "totalTestCases": 39,
+  "passed": 36,
+  "failed": 3,
+  "skipped": 0,
+  "blocked": 0,
+  "passRate": "92.3%",
+  "overallStatus": "passed",
+  "uiIssues": [],
+  "responsiveIssues": [
+    "RESP-04: Form on iPhone 14 Pro: TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('option', { name: 'Pawar Public School, hadapsar' })\u001b[22m\n",
+    "RESP-04-sidebar: Menu on iPhone 14 Pro: TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('option', { name: 'Pawar Public School, hadapsar' })\u001b[22m\n",
+    "RESP-05: Form on Galaxy S21: TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('option', { name: 'Pawar Public School, hadapsar' })\u001b[22m\n"
+  ]
+}

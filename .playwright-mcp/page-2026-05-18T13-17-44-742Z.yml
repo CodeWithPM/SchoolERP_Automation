@@ -1,0 +1,28 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - img [ref=e7]
+    - generic [ref=e80]: Pawar Public School, hadapsar
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: User Name
+        - textbox "User Name" [ref=e81]
+      - generic [ref=e15]:
+        - generic [ref=e16]: Password
+        - generic [ref=e17]:
+          - textbox "Password" [ref=e82]
+          - button "toggle password visibility" [ref=e83] [cursor=pointer]:
+            - img [ref=e21]
+      - generic [ref=e23]:
+        - button "Login" [ref=e84] [cursor=pointer]: Login
+        - generic [ref=e25] [cursor=pointer]: Forgot Password
+    - generic [ref=e27] [cursor=pointer]: Change School For Login
+    - generic [ref=e29] [cursor=pointer]: School Notices
+    - link "Privacy Policy" [ref=e85] [cursor=pointer]:
+      - /url: https://www.riteschool.com/privacy-policy
+    - separator
+    - generic [ref=e33]:
+      - link [ref=e35] [cursor=pointer]:
+        - /url: https://www.regulusit.net
+        - img [ref=e36]
+      - generic [ref=e38]: All rights reserved © 2007 - 2026, Regulus Information Technologies.
+  - generic [ref=e40]: prod 2.1.6

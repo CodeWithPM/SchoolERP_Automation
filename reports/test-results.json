@@ -1,0 +1,2748 @@
+{
+  "config": {
+    "configFile": "C:\\SchoolERP_Automation\\playwright.config.ts",
+    "rootDir": "C:/SchoolERP_Automation/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/SchoolERP_Automation/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium-desktop",
+        "name": "chromium-desktop",
+        "testDir": "C:/SchoolERP_Automation/tests",
+        "testIgnore": [
+          "**/_explore*.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "C:/SchoolERP_Automation/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "firefox-desktop",
+        "name": "firefox-desktop",
+        "testDir": "C:/SchoolERP_Automation/tests",
+        "testIgnore": [
+          "**/_explore*.spec.ts"
+        ],
+        "testMatch": [
+          "/smoke|system/"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "C:/SchoolERP_Automation/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "webkit-desktop",
+        "name": "webkit-desktop",
+        "testDir": "C:/SchoolERP_Automation/tests",
+        "testIgnore": [
+          "**/_explore*.spec.ts"
+        ],
+        "testMatch": [
+          "/smoke/"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "reports/html-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/test-results.json"
+        }
+      ],
+      [
+        "C:\\SchoolERP_Automation\\reporters\\qa-summary.reporter.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 3,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "responsive\\aadhaar-responsive.spec.ts",
+      "file": "responsive/aadhaar-responsive.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Responsive Testing @responsive",
+          "file": "responsive/aadhaar-responsive.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "RESP-01: Form on Desktop 1920x1080",
+              "ok": true,
+              "tags": [
+                "responsive"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13303,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:06:21.214Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:25.071Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:25.082Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:25.889Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:26.320Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:29.611Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:29.692Z] [Responsive] STEP: Viewport 1920x1080\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:29.820Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:32.406Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:32.411Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:06:20.670Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eab1668955298e894327-ebf6430d71ab0e8f2374",
+              "file": "responsive/aadhaar-responsive.spec.ts",
+              "line": 20,
+              "column": 9
+            },
+            {
+              "title": "RESP-01-sidebar: Menu on Desktop 1920x1080",
+              "ok": true,
+              "tags": [
+                "responsive"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 12769,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:06:21.546Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:25.738Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:25.748Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:26.411Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:26.834Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:29.896Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:30.173Z] [Responsive] STEP: Viewport 1920x1080\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:30.218Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:30.265Z] [undefined] STEP: Open sidebar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:30.267Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:06:20.703Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eab1668955298e894327-460cbc598a60acf9c6d3",
+              "file": "responsive/aadhaar-responsive.spec.ts",
+              "line": 29,
+              "column": 9
+            },
+            {
+              "title": "RESP-02: Form on Laptop 1366x768",
+              "ok": true,
+              "tags": [
+                "responsive"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 15320,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:06:21.424Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:25.007Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:25.018Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:27.319Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:27.697Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:33.967Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:34.015Z] [Responsive] STEP: Viewport 1366x768\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:34.137Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:35.386Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:35.389Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:06:20.664Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eab1668955298e894327-58fc0efa09614a3b8fae",
+              "file": "responsive/aadhaar-responsive.spec.ts",
+              "line": 20,
+              "column": 9
+            },
+            {
+              "title": "RESP-02-sidebar: Menu on Laptop 1366x768",
+              "ok": true,
+              "tags": [
+                "responsive"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 14932,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:06:34.550Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:37.645Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:37.682Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:38.431Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:38.694Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:44.830Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:44.945Z] [Responsive] STEP: Viewport 1366x768\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:45.124Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:45.159Z] [undefined] STEP: Open sidebar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:45.160Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:06:33.994Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eab1668955298e894327-c5883ab2e8bdb7b295f1",
+              "file": "responsive/aadhaar-responsive.spec.ts",
+              "line": 29,
+              "column": 9
+            },
+            {
+              "title": "RESP-03: Form on Tablet iPad Air",
+              "ok": true,
+              "tags": [
+                "responsive"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15350,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:06:34.687Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:37.846Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:37.856Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:38.428Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:38.731Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:45.317Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:45.651Z] [Responsive] STEP: Viewport 820x1180\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:46.130Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:48.098Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:48.102Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:06:34.288Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eab1668955298e894327-5cbaac2239fa195aea1f",
+              "file": "responsive/aadhaar-responsive.spec.ts",
+              "line": 20,
+              "column": 9
+            },
+            {
+              "title": "RESP-03-sidebar: Menu on Tablet iPad Air",
+              "ok": true,
+              "tags": [
+                "responsive"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 23132,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:06:36.515Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:40.109Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:40.113Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:40.660Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:40.911Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:56.445Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:56.483Z] [Responsive] STEP: Viewport 820x1180\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:56.737Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:56.775Z] [undefined] STEP: Open sidebar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:56.775Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:06:36.353Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eab1668955298e894327-6a48ad6988ea7b0cb23f",
+              "file": "responsive/aadhaar-responsive.spec.ts",
+              "line": 29,
+              "column": 9
+            },
+            {
+              "title": "RESP-04: Form on iPhone 14 Pro",
+              "ok": true,
+              "tags": [
+                "responsive"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 23697,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('option', { name: 'Pawar Public School, hadapsar' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('option', { name: 'Pawar Public School, hadapsar' })\u001b[22m\n\n    at LoginPage.selectSchool (C:\\SchoolERP_Automation\\pages\\login.page.ts:20:51)\n    at LoginPage.login (C:\\SchoolERP_Automation\\pages\\login.page.ts:36:5)\n    at C:\\SchoolERP_Automation\\tests\\responsive\\aadhaar-responsive.spec.ts:16:5",
+                        "location": {
+                          "file": "C:\\SchoolERP_Automation\\pages\\login.page.ts",
+                          "column": 51,
+                          "line": 20
+                        },
+                        "snippet": "   at ..\\pages\\login.page.ts:20\n\n  18 |     this.log.step(`Select school: ${name}`);\n  19 |     await this.schoolCombo().click();\n> 20 |     await this.page.getByRole('option', { name }).click();\n     |                                                   ^\n  21 |   }\n  22 |\n  23 |   async enterCredentials(user = credentials.username, pass = credentials.password): Promise<void> {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\SchoolERP_Automation\\pages\\login.page.ts",
+                            "column": 51,
+                            "line": 20
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('option', { name: 'Pawar Public School, hadapsar' })\u001b[22m\n\n\n   at ..\\pages\\login.page.ts:20\n\n  18 |     this.log.step(`Select school: ${name}`);\n  19 |     await this.schoolCombo().click();\n> 20 |     await this.page.getByRole('option', { name }).click();\n     |                                                   ^\n  21 |   }\n  22 |\n  23 |   async enterCredentials(user = credentials.username, pass = credentials.password): Promise<void> {\n    at LoginPage.selectSchool (C:\\SchoolERP_Automation\\pages\\login.page.ts:20:51)\n    at LoginPage.login (C:\\SchoolERP_Automation\\pages\\login.page.ts:36:5)\n    at C:\\SchoolERP_Automation\\tests\\responsive\\aadhaar-responsive.spec.ts:16:5"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:06:49.260Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:51.928Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:51.935Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:06:49.025Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\SchoolERP_Automation\\test-results\\responsive-aadhaar-respons-b5cf8-SP-04-Form-on-iPhone-14-Pro-chromium-desktop\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\SchoolERP_Automation\\test-results\\responsive-aadhaar-respons-b5cf8-SP-04-Form-on-iPhone-14-Pro-chromium-desktop\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\SchoolERP_Automation\\test-results\\responsive-aadhaar-respons-b5cf8-SP-04-Form-on-iPhone-14-Pro-chromium-desktop\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\SchoolERP_Automation\\test-results\\responsive-aadhaar-respons-b5cf8-SP-04-Form-on-iPhone-14-Pro-chromium-desktop\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\SchoolERP_Automation\\pages\\login.page.ts",
+                        "column": 51,
+                        "line": 20
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 45778,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:07:17.400Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:20.867Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:20.876Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:38.884Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:39.389Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:50.291Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:50.419Z] [Responsive] STEP: Viewport 393x852\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:51.358Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:58.905Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:58.914Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-05-19T12:07:17.004Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "eab1668955298e894327-e2c51471c5d3139aaf02",
+              "file": "responsive/aadhaar-responsive.spec.ts",
+              "line": 20,
+              "column": 9
+            },
+            {
+              "title": "RESP-04-sidebar: Menu on iPhone 14 Pro",
+              "ok": true,
+              "tags": [
+                "responsive"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 23798,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('option', { name: 'Pawar Public School, hadapsar' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('option', { name: 'Pawar Public School, hadapsar' })\u001b[22m\n\n    at LoginPage.selectSchool (C:\\SchoolERP_Automation\\pages\\login.page.ts:20:51)\n    at LoginPage.login (C:\\SchoolERP_Automation\\pages\\login.page.ts:36:5)\n    at C:\\SchoolERP_Automation\\tests\\responsive\\aadhaar-responsive.spec.ts:16:5",
+                        "location": {
+                          "file": "C:\\SchoolERP_Automation\\pages\\login.page.ts",
+                          "column": 51,
+                          "line": 20
+                        },
+                        "snippet": "   at ..\\pages\\login.page.ts:20\n\n  18 |     this.log.step(`Select school: ${name}`);\n  19 |     await this.schoolCombo().click();\n> 20 |     await this.page.getByRole('option', { name }).click();\n     |                                                   ^\n  21 |   }\n  22 |\n  23 |   async enterCredentials(user = credentials.username, pass = credentials.password): Promise<void> {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\SchoolERP_Automation\\pages\\login.page.ts",
+                            "column": 51,
+                            "line": 20
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('option', { name: 'Pawar Public School, hadapsar' })\u001b[22m\n\n\n   at ..\\pages\\login.page.ts:20\n\n  18 |     this.log.step(`Select school: ${name}`);\n  19 |     await this.schoolCombo().click();\n> 20 |     await this.page.getByRole('option', { name }).click();\n     |                                                   ^\n  21 |   }\n  22 |\n  23 |   async enterCredentials(user = credentials.username, pass = credentials.password): Promise<void> {\n    at LoginPage.selectSchool (C:\\SchoolERP_Automation\\pages\\login.page.ts:20:51)\n    at LoginPage.login (C:\\SchoolERP_Automation\\pages\\login.page.ts:36:5)\n    at C:\\SchoolERP_Automation\\tests\\responsive\\aadhaar-responsive.spec.ts:16:5"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:06:49.819Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:52.811Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:06:52.816Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:06:49.684Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\SchoolERP_Automation\\test-results\\responsive-aadhaar-respons-a2bf7-debar-Menu-on-iPhone-14-Pro-chromium-desktop\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\SchoolERP_Automation\\test-results\\responsive-aadhaar-respons-a2bf7-debar-Menu-on-iPhone-14-Pro-chromium-desktop\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\SchoolERP_Automation\\test-results\\responsive-aadhaar-respons-a2bf7-debar-Menu-on-iPhone-14-Pro-chromium-desktop\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\SchoolERP_Automation\\test-results\\responsive-aadhaar-respons-a2bf7-debar-Menu-on-iPhone-14-Pro-chromium-desktop\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\SchoolERP_Automation\\pages\\login.page.ts",
+                        "column": 51,
+                        "line": 20
+                      }
+                    },
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 45507,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:07:18.154Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:22.088Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:22.098Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:37.301Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:37.543Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:49.102Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:49.548Z] [Responsive] STEP: Viewport 393x852\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:50.205Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:50.418Z] [undefined] STEP: Open sidebar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:50.419Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-05-19T12:07:17.776Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "eab1668955298e894327-b78574c74ffcb972f929",
+              "file": "responsive/aadhaar-responsive.spec.ts",
+              "line": 29,
+              "column": 9
+            },
+            {
+              "title": "RESP-05: Form on Galaxy S21",
+              "ok": true,
+              "tags": [
+                "responsive"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 23694,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('option', { name: 'Pawar Public School, hadapsar' })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('option', { name: 'Pawar Public School, hadapsar' })\u001b[22m\n\n    at LoginPage.selectSchool (C:\\SchoolERP_Automation\\pages\\login.page.ts:20:51)\n    at LoginPage.login (C:\\SchoolERP_Automation\\pages\\login.page.ts:36:5)\n    at C:\\SchoolERP_Automation\\tests\\responsive\\aadhaar-responsive.spec.ts:16:5",
+                        "location": {
+                          "file": "C:\\SchoolERP_Automation\\pages\\login.page.ts",
+                          "column": 51,
+                          "line": 20
+                        },
+                        "snippet": "   at ..\\pages\\login.page.ts:20\n\n  18 |     this.log.step(`Select school: ${name}`);\n  19 |     await this.schoolCombo().click();\n> 20 |     await this.page.getByRole('option', { name }).click();\n     |                                                   ^\n  21 |   }\n  22 |\n  23 |   async enterCredentials(user = credentials.username, pass = credentials.password): Promise<void> {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\SchoolERP_Automation\\pages\\login.page.ts",
+                            "column": 51,
+                            "line": 20
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('option', { name: 'Pawar Public School, hadapsar' })\u001b[22m\n\n\n   at ..\\pages\\login.page.ts:20\n\n  18 |     this.log.step(`Select school: ${name}`);\n  19 |     await this.schoolCombo().click();\n> 20 |     await this.page.getByRole('option', { name }).click();\n     |                                                   ^\n  21 |   }\n  22 |\n  23 |   async enterCredentials(user = credentials.username, pass = credentials.password): Promise<void> {\n    at LoginPage.selectSchool (C:\\SchoolERP_Automation\\pages\\login.page.ts:20:51)\n    at LoginPage.login (C:\\SchoolERP_Automation\\pages\\login.page.ts:36:5)\n    at C:\\SchoolERP_Automation\\tests\\responsive\\aadhaar-responsive.spec.ts:16:5"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:06:59.660Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:02.506Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:02.512Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:06:59.541Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\SchoolERP_Automation\\test-results\\responsive-aadhaar-respons-fbdfe--RESP-05-Form-on-Galaxy-S21-chromium-desktop\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\SchoolERP_Automation\\test-results\\responsive-aadhaar-respons-fbdfe--RESP-05-Form-on-Galaxy-S21-chromium-desktop\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\SchoolERP_Automation\\test-results\\responsive-aadhaar-respons-fbdfe--RESP-05-Form-on-Galaxy-S21-chromium-desktop\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\SchoolERP_Automation\\test-results\\responsive-aadhaar-respons-fbdfe--RESP-05-Form-on-Galaxy-S21-chromium-desktop\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\SchoolERP_Automation\\pages\\login.page.ts",
+                        "column": 51,
+                        "line": 20
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 33795,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:07:28.446Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:31.042Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:31.053Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:45.711Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:46.032Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:54.756Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:55.278Z] [Responsive] STEP: Viewport 360x800\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:56.098Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:59.476Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:07:59.485Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-05-19T12:07:27.653Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "eab1668955298e894327-4297539b98315bd7b9aa",
+              "file": "responsive/aadhaar-responsive.spec.ts",
+              "line": 20,
+              "column": 9
+            },
+            {
+              "title": "RESP-05-sidebar: Menu on Galaxy S21",
+              "ok": true,
+              "tags": [
+                "responsive"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 24957,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:08:02.382Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:08:05.337Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:08:05.341Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:08:13.932Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:08:14.277Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:08:19.240Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:08:24.100Z] [Responsive] STEP: Viewport 360x800\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:08:25.104Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:08:25.376Z] [undefined] STEP: Open sidebar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:08:25.376Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:08:01.742Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eab1668955298e894327-e3efd8a17e6c7f7f4049",
+              "file": "responsive/aadhaar-responsive.spec.ts",
+              "line": 29,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "smoke\\aadhaar-smoke.spec.ts",
+      "file": "smoke/aadhaar-smoke.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Smoke Testing @smoke",
+          "file": "smoke/aadhaar-smoke.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "SMK-01: Application launch",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4501,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:08:03.407Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:08:06.972Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:08:03.067Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "330e9b862e949d257a50-89cb1382667d3f77e859",
+              "file": "smoke/aadhaar-smoke.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "SMK-02: School dropdown",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11990,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:08:03.698Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:08:07.221Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:08:07.304Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:08:03.506Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "330e9b862e949d257a50-f204c96f42c369427f32",
+              "file": "smoke/aadhaar-smoke.spec.ts",
+              "line": 9,
+              "column": 7
+            }
+          ],
+          "suites": [
+            {
+              "title": "Authenticated",
+              "file": "smoke/aadhaar-smoke.spec.ts",
+              "line": 15,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "SMK-03: Login success",
+                  "ok": true,
+                  "tags": [
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 16396,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[2026-05-19T12:08:07.861Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:10.490Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:10.495Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:14.358Z] [undefined] STEP: Enter credentials\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:14.719Z] [undefined] STEP: Click login\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:19.168Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-19T12:08:07.634Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "330e9b862e949d257a50-59cc4a46246322506ed8",
+                  "file": "smoke/aadhaar-smoke.spec.ts",
+                  "line": 20,
+                  "column": 9
+                },
+                {
+                  "title": "SMK-04: Sidebar opens",
+                  "ok": true,
+                  "tags": [
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 20496,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[2026-05-19T12:08:15.658Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:20.504Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:20.508Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:28.041Z] [undefined] STEP: Enter credentials\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:28.548Z] [undefined] STEP: Click login\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:32.133Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:32.504Z] [undefined] STEP: Open sidebar\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:32.504Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-19T12:08:15.553Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "330e9b862e949d257a50-5573b25814dd6e9bdff2",
+                  "file": "smoke/aadhaar-smoke.spec.ts",
+                  "line": 24,
+                  "column": 9
+                },
+                {
+                  "title": "SMK-05: Navigate to Aadhaar page",
+                  "ok": true,
+                  "tags": [
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 18058,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[2026-05-19T12:08:24.464Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:27.504Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:27.509Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:27.925Z] [undefined] STEP: Enter credentials\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:28.143Z] [undefined] STEP: Click login\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:32.013Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:33.073Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:33.993Z] [undefined] STEP: Open sidebar\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:33.993Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:38.356Z] [undefined] STEP: Expand Extra Screens\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:40.466Z] [undefined] STEP: Quick find: Add Aadhar Card Details\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:41.781Z] [WaitHelper] STEP: Waiting for URL: AadharCard\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-19T12:08:24.095Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "330e9b862e949d257a50-43901e6e5277ee0504c1",
+                  "file": "smoke/aadhaar-smoke.spec.ts",
+                  "line": 29,
+                  "column": 9
+                },
+                {
+                  "title": "SMK-06: Form fields visible",
+                  "ok": true,
+                  "tags": [
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 37981,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[2026-05-19T12:08:26.944Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:30.173Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:30.180Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:31.833Z] [undefined] STEP: Enter credentials\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:32.357Z] [undefined] STEP: Click login\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:50.235Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:58.148Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:09:03.565Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:09:03.573Z] [undefined] STEP: Wait for Aadhaar form\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-19T12:08:26.785Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "330e9b862e949d257a50-d89ed0762112219897d9",
+                  "file": "smoke/aadhaar-smoke.spec.ts",
+                  "line": 34,
+                  "column": 9
+                },
+                {
+                  "title": "SMK-07: Submit button visible",
+                  "ok": true,
+                  "tags": [
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 23533,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[2026-05-19T12:08:36.500Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:39.628Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:39.633Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:47.602Z] [undefined] STEP: Enter credentials\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:47.890Z] [undefined] STEP: Click login\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:52.081Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:52.727Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:55.821Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:55.826Z] [undefined] STEP: Wait for Aadhaar form\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-19T12:08:36.106Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "330e9b862e949d257a50-21635690ef451da7bac5",
+                  "file": "smoke/aadhaar-smoke.spec.ts",
+                  "line": 40,
+                  "column": 9
+                },
+                {
+                  "title": "SMK-08: Logout",
+                  "ok": true,
+                  "tags": [
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 21996,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[2026-05-19T12:08:42.336Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:55.783Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:55.789Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:57.788Z] [undefined] STEP: Enter credentials\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:08:58.202Z] [undefined] STEP: Click login\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:09:02.130Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:09:02.168Z] [undefined] STEP: Logout\n"
+                            },
+                            {
+                              "text": "[2026-05-19T12:09:02.168Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-19T12:08:42.213Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "330e9b862e949d257a50-964b577e351a36e382a5",
+                  "file": "smoke/aadhaar-smoke.spec.ts",
+                  "line": 46,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "system\\aadhaar-system.spec.ts",
+      "file": "system/aadhaar-system.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "System Testing @system",
+          "file": "system/aadhaar-system.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "SYS-01: Valid Aadhaar submission",
+              "ok": true,
+              "tags": [
+                "system"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 54481,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:08:59.993Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:04.086Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:04.090Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:08.283Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:08.593Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:18.152Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:26.352Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:31.512Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:31.519Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:32.656Z] [undefined] STEP: Fill Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:33.070Z] [undefined] STEP: Submit form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:08:59.719Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ca18328fde5d49fe964d-5574bc5e3d13cd3233cf",
+              "file": "system/aadhaar-system.spec.ts",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "SYS-02: Blank submission validation",
+              "ok": true,
+              "tags": [
+                "system"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 51333,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:09:04.572Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:16.358Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:16.362Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:17.001Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:17.326Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:24.122Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:40.967Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:49.952Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:49.959Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:54.036Z] [undefined] STEP: Submit form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:09:04.261Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ca18328fde5d49fe964d-044e1f4d52578e36fd0c",
+              "file": "system/aadhaar-system.spec.ts",
+              "line": 17,
+              "column": 7
+            },
+            {
+              "title": "SYS-03: Invalid short number",
+              "ok": true,
+              "tags": [
+                "system"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 48347,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:09:04.943Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:20.955Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:20.961Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:22.929Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:23.333Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:31.820Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:31.991Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:34.850Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:34.856Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:35.156Z] [undefined] STEP: Fill Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:35.538Z] [undefined] STEP: Submit form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:09:04.827Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ca18328fde5d49fe964d-b0aada787cbd17559555",
+              "file": "system/aadhaar-system.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "SYS-04: Alpha in Aadhaar field rejected",
+              "ok": true,
+              "tags": [
+                "system"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 10423,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:09:53.770Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:56.921Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:56.925Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:57.381Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:57.701Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:01.844Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:01.908Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:03.013Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:03.025Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:09:53.256Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ca18328fde5d49fe964d-c72e9368937686a05e41",
+              "file": "system/aadhaar-system.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "SYS-05: Special characters rejected",
+              "ok": true,
+              "tags": [
+                "system"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 19161,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:09:54.603Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:58.589Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:58.594Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:59.757Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:00.101Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:06.080Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:08.795Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:12.788Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:12.792Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:09:54.290Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ca18328fde5d49fe964d-ffad9a737b6ebe71b975",
+              "file": "system/aadhaar-system.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "SYS-06: Character limit",
+              "ok": true,
+              "tags": [
+                "system"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 15260,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:09:55.885Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:59.410Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:59.415Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:09:59.969Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:00.343Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:06.230Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:06.399Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:08.262Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:08.268Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:09:55.656Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ca18328fde5d49fe964d-029ca97a4750246149b7",
+              "file": "system/aadhaar-system.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "SYS-07: Mandatory name field",
+              "ok": true,
+              "tags": [
+                "system"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 25468,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:10:03.864Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:09.770Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:09.776Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:18.244Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:18.478Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:21.906Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:22.554Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:26.795Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:26.956Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:27.192Z] [undefined] STEP: Submit form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:10:03.729Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ca18328fde5d49fe964d-1a4eabfe6ecd51eb7762",
+              "file": "system/aadhaar-system.spec.ts",
+              "line": 46,
+              "column": 7
+            },
+            {
+              "title": "SYS-08: Twelve digit format",
+              "ok": true,
+              "tags": [
+                "system"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 18203,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:10:11.419Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:13.918Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:13.923Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:18.780Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:19.165Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:21.345Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:21.489Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:24.695Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:24.706Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:24.925Z] [undefined] STEP: Fill Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:10:10.973Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ca18328fde5d49fe964d-89a28eac1ee46217fde4",
+              "file": "system/aadhaar-system.spec.ts",
+              "line": 52,
+              "column": 7
+            },
+            {
+              "title": "SYS-09: Refresh clears unsaved data",
+              "ok": true,
+              "tags": [
+                "system"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16368,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:10:13.639Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:16.524Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:16.531Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:18.384Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:19.319Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:24.678Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:24.739Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:27.075Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:27.085Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:27.249Z] [undefined] STEP: Fill Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:29.142Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:10:13.514Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ca18328fde5d49fe964d-69f740188ce37f865373",
+              "file": "system/aadhaar-system.spec.ts",
+              "line": 57,
+              "column": 7
+            },
+            {
+              "title": "SYS-10: Stay on page after submit",
+              "ok": true,
+              "tags": [
+                "system"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 20452,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:10:29.587Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:32.946Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:32.951Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:36.912Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:37.285Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:42.591Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:43.495Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:46.710Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:46.717Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:46.933Z] [undefined] STEP: Fill Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:47.459Z] [undefined] STEP: Submit form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:10:29.230Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ca18328fde5d49fe964d-e82e4d7e6fc3aa764653",
+              "file": "system/aadhaar-system.spec.ts",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "SYS-11: Duplicate entry",
+              "ok": true,
+              "tags": [
+                "system"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 20030,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:10:29.627Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:32.757Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:32.767Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:36.807Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:37.021Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:41.742Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:42.520Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:45.241Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:45.250Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:45.572Z] [undefined] STEP: Fill Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:45.835Z] [undefined] STEP: Submit form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:46.510Z] [undefined] STEP: Fill Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:46.907Z] [undefined] STEP: Submit form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:10:29.243Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ca18328fde5d49fe964d-694c9f105232bac54671",
+              "file": "system/aadhaar-system.spec.ts",
+              "line": 71,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui\\aadhaar-ui.spec.ts",
+      "file": "ui/aadhaar-ui.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "UI Testing @ui",
+          "file": "ui/aadhaar-ui.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "UI-01: Field alignment",
+              "ok": true,
+              "tags": [
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 24826,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:10:30.073Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:33.640Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:33.646Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:37.013Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:37.406Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:40.364Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:46.421Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:53.209Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:53.439Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:10:29.955Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d404bc9be157ad6421be-9f8e406b5af4c38d6401",
+              "file": "ui/aadhaar-ui.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "UI-02: Save button clickable",
+              "ok": true,
+              "tags": [
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 17050,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:10:49.647Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:52.796Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:52.803Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:57.518Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:57.909Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:02.857Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:02.957Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:05.775Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:05.782Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:10:49.345Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d404bc9be157ad6421be-9a9640a489184c4ce795",
+              "file": "ui/aadhaar-ui.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "UI-03: Label visibility",
+              "ok": true,
+              "tags": [
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 16895,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:10:50.093Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:54.269Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:54.274Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:57.147Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:57.648Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:01.613Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:02.129Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:05.226Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:05.237Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:10:49.749Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d404bc9be157ad6421be-b7a813f914edef49f187",
+              "file": "ui/aadhaar-ui.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "UI-04: Sidebar toggle",
+              "ok": true,
+              "tags": [
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13028,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:10:54.945Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:58.370Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:58.375Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:58.962Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:10:59.108Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:05.654Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:05.703Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:07.268Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:07.272Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:07.369Z] [undefined] STEP: Open sidebar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:07.369Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:10:54.809Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d404bc9be157ad6421be-fd6f2ee613bc1c0ba232",
+              "file": "ui/aadhaar-ui.spec.ts",
+              "line": 30,
+              "column": 7
+            },
+            {
+              "title": "UI-05: Scroll behavior",
+              "ok": true,
+              "tags": [
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 15827,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:11:06.946Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:09.906Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:09.912Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:18.387Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:18.780Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:20.864Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:20.900Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:21.848Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:21.852Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:11:06.502Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d404bc9be157ad6421be-f3757e1f523e8033336b",
+              "file": "ui/aadhaar-ui.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "UI-06: Field spacing",
+              "ok": true,
+              "tags": [
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 19264,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:11:06.984Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:10.038Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:10.044Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:18.576Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:18.920Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:23.078Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:23.113Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:24.525Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:24.535Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:11:06.689Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d404bc9be157ad6421be-0ffaeec260be8fb294ed",
+              "file": "ui/aadhaar-ui.spec.ts",
+              "line": 40,
+              "column": 7
+            },
+            {
+              "title": "UI-07: Desktop no overflow",
+              "ok": true,
+              "tags": [
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 18983,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-05-19T12:11:08.067Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/schoolList\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:11.323Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:11.328Z] [undefined] STEP: Select school: Pawar Public School, hadapsar\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:18.921Z] [undefined] STEP: Enter credentials\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:19.648Z] [undefined] STEP: Click login\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:24.537Z] [DialogHelper] STEP: Dismissing post-login dialogs\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:24.601Z] [undefined] STEP: Navigate to https://schoolwebsiteui.aaditechnology.com/RITeSchool/Teacher/AadharCard\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:26.402Z] [WaitHelper] STEP: Waiting for DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:26.407Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:26.505Z] [Responsive] STEP: Viewport 1920x1080\n"
+                        },
+                        {
+                          "text": "[2026-05-19T12:11:26.517Z] [undefined] STEP: Wait for Aadhaar form\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T12:11:07.877Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d404bc9be157ad6421be-c4fa188aff849d906ca6",
+              "file": "ui/aadhaar-ui.spec.ts",
+              "line": 45,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-19T12:06:19.294Z",
+    "duration": 310641.009,
+    "expected": 33,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 3
+  }
+}
